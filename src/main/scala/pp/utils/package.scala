@@ -2,6 +2,8 @@ package pp
 
 import java.io.Closeable
 
+import scala.util.Try
+
 /**
   * Created by pavel on 06.07.17.
   */
@@ -11,7 +13,7 @@ package object utils {
     try {
       code(resource)
     } finally {
-      cleanup(resource)
+      Try(cleanup(resource))
     }
   }
 

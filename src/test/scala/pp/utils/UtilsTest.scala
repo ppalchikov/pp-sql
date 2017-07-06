@@ -18,7 +18,6 @@ class UtilsTest extends FunSuite {
     }
     newBufferedReader(get("LICENSE")).use { r =>
       println(r.lines().iterator().asScala.mkString(" "))
-      r.close()
     }
   }
 
