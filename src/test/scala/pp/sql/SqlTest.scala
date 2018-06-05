@@ -1,14 +1,10 @@
 package pp.sql
 
-import org.scalatest.{FunSpec, Matchers}
+import org.scalatest.FunSuite
 
 /**
   * Created by pavel on 06.07.17.
   */
-class SqlTest extends FunSpec with Matchers {
-  it("run first sql test") {
-    println("ok")
-  }
-
+class SqlTest extends FunSuite {
 
 }
